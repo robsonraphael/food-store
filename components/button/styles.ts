@@ -5,6 +5,7 @@ export const Wrap = styled.TouchableOpacity`
   height: 45px;
 
   justify-content: center;
+
 `;
 export const Text = styled.Text`
   color: #fff;
@@ -12,3 +13,6 @@ export const Text = styled.Text`
   text-align: center;
   font-size: 18px;
 `;
+export const Border = {
+  borderRadius: 15,
+}

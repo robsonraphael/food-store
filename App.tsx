@@ -13,7 +13,7 @@ const Tab = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator initialRouteName='Market'>
+      <Tab.Navigator initialRouteName='Introduction'>
         <Tab.Screen name="Introduction" component={Introduction}/>
         <Tab.Screen name="Market" component={Market} />
       </Tab.Navigator>

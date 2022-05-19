@@ -14,10 +14,10 @@ import {
 import SvgFile from "../../assets/donout.svg";
 import { Register } from "../../components/button/index";
 
-export default function Introduction({navigation} : any) {
+export default function Introduction({ navigation }: any) {
   return (
     <Container>
-      <StatusBar style="light" />
+      <StatusBar style="dark" />
       <Wrapper>
         <SvgFile width={250} height={250} />
         <Circle />
@@ -27,10 +27,14 @@ export default function Introduction({navigation} : any) {
         <Text>Order you Favorite desert here !</Text>
       </WrapperText>
       <WrapperButtons>
-        <Login onPress={() => {navigation.navigate("Market")}}>
+        <Login
+          onPress={() => {
+            navigation.navigate("Market");
+          }}
+        >
           <TextBtn>Login</TextBtn>
         </Login>
-        <Register text="Get Started" to={navigation.navigate("Market")}/>
+        <Register text="Get Started"/>
       </WrapperButtons>
     </Container>
   );
